@@ -132,7 +132,7 @@ int main(int argc, char* argv[]) {
   printf(PROGNAME); printf(": connecting");
 
   while (1) {
-
+    printf("got here");
     //get byte from target
     byte = cnsl_getchar();
 

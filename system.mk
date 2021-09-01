@@ -75,19 +75,19 @@ BOARD ?=CYCLONEV-GT-DK
 
 #set according to FPGA board
 ifeq ($(BOARD),AES-KU040-DB-G)
-	BOARD_SERVER ?=baba-de-camelo.iobundle.com
-	BOARD_USER ?=$(USER)
+	BOARD_SERVER ?=pudim-flan.iobundle.com
+	BOARD_USER ?=trainee
 	FPGA_OBJ ?=synth_system.bit
 	FPGA_LOG ?=vivado.log
 	FPGA_SERVER ?=pudim-flan.iobundle.com
-	FPGA_USER ?=$(USER)
+	FPGA_USER ?=trainee
 else #default; ifeq ($(BOARD),CYCLONEV-GT-DK)
 	BOARD_SERVER ?=pudim-flan.iobundle.com
-	BOARD_USER ?=$(USER)
+	BOARD_USER ?=trainee
 	FPGA_OBJ ?=output_files/top_system.sof
 	FPGA_LOG ?=output_files/top_system.fit.summary
 	FPGA_SERVER ?=pudim-flan.iobundle.com
-	FPGA_USER ?=$(USER)
+	FPGA_USER ?=trainee
 endif
 
 #board list for testing
@@ -97,14 +97,14 @@ BOARD_LIST ?=CYCLONEV-GT-DK AES-KU040-DB-G
 #
 #ROOT DIR ON REMOTE MACHINES
 #
-REMOTE_ROOT_DIR ?=sandbox/iob-soc
+REMOTE_ROOT_DIR ?=keval/sandbox/iob-soc
 
 #
 # ASIC COMPILE (WIP)
 #
 ASIC_NODE:=umc130
 ASIC_SERVER:=micro7.lx.it.pt
-ASIC_COMPILE_ROOT_DIR=$(ROOT_DIR)/sandbox/iob-soc
+ASIC_COMPILE_ROOT_DIR=keval/sandbox/iob-soc
 #ASIC_USER=
 
 #
