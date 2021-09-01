@@ -12,4 +12,5 @@
 	url = git@github.com:IObundle/iob-timer.git
 [submodule "submodules/KNN"]
 	path = submodules/KNN
-	url = git@github.com:IObundle/iob-knn.git
+	url = git@github.com:keval-pixel/iob-knn.git
+	
