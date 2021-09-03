@@ -1,11 +1,13 @@
 [*]
-[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Fri Feb 12 03:28:18 2021
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Sep  2 19:31:08 2021
 [*]
-[dumpfile] "(null)"
-[savefile] "/home/jsousa/sandbox/iob-soc/hardware/simulation/waves.gtkw"
-[timestart] 13966554000
-[size] 1918 1031
+[dumpfile] "/home/iob-user/Desktop/iob-soc-knn/hardware/simulation/icarus/system.vcd"
+[dumpfile_mtime] "Thu Sep  2 19:22:43 2021"
+[dumpfile_size] 447316583
+[savefile] "/home/iob-user/Desktop/iob-soc-knn/hardware/simulation/waves.gtkw"
+[timestart] 0
+[size] 1848 1136
 [pos] -1 -1
 *-20.371645 13971110000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] system_tb.
@@ -40,11 +42,10 @@ system_tb.uut.int_mem0.int_sram.i_rdata[31:0]
 system_tb.uut.int_mem0.int_sram.i_ready
 system_tb.uut.int_mem0.int_sram.d_valid
 @22
-system_tb.uut.int_mem0.int_sram.d_addr[13:0]
 system_tb.uut.int_mem0.int_sram.d_wdata[31:0]
 system_tb.uut.int_mem0.int_sram.d_wstrb[3:0]
 system_tb.uut.int_mem0.int_sram.d_rdata[31:0]
-@29
+@28
 system_tb.uut.int_mem0.int_sram.d_ready
 @200
 -SYSTEM
@@ -91,8 +92,6 @@ system_tb.uut.cpu.picorv32_core.trap
 @28
 system_tb.uut.uart.txd
 system_tb.uut.uart.rxd
-system_tb.uut.uart.tx_ready
-system_tb.uut.uart.rx_ready
 system_tb.uut.uart.valid
 @24
 system_tb.uut.uart.address[2:0]
@@ -109,5 +108,52 @@ system_tb.uart_tb.valid
 system_tb.uart_tb.address[2:0]
 system_tb.uart_tb.rxd
 system_tb.uart_tb.txd
+@200
+-
+-KNN
+@29
+system_tb.uut.knn.KNN_ENABLE
+system_tb.uut.knn.KNN_RESET
+@23
+system_tb.uut.knn.KNN_VALUE[63:0]
+system_tb.uut.knn.KNN_VALUE_HIGH[31:0]
+system_tb.uut.knn.KNN_VALUE_LOW[31:0]
+system_tb.uut.knn.KNN_X1[31:0]
+system_tb.uut.knn.KNN_X2[31:0]
+system_tb.uut.knn.KNN_Y1[31:0]
+system_tb.uut.knn.KNN_Y2[31:0]
+@29
+system_tb.uut.knn.address[2:0]
+system_tb.uut.knn.clk
+system_tb.uut.knn.knn0.KNN_ENABLE
+@23
+system_tb.uut.knn.knn0.KNN_VALUE[63:0]
+system_tb.uut.knn.knn0.KNN_X1[31:0]
+system_tb.uut.knn.knn0.KNN_X2[31:0]
+system_tb.uut.knn.knn0.KNN_Y1[31:0]
+system_tb.uut.knn.knn0.KNN_Y2[31:0]
+@29
+system_tb.uut.knn.knn0.clk
+@23
+system_tb.uut.knn.knn0.difx[31:0]
+system_tb.uut.knn.knn0.dify[31:0]
+system_tb.uut.knn.knn0.distance[63:0]
+@29
+system_tb.uut.knn.knn0.rst
+@23
+system_tb.uut.knn.knn0.squarex[63:0]
+system_tb.uut.knn.knn0.squarey[63:0]
+system_tb.uut.knn.rdata[31:0]
+system_tb.uut.knn.rdata_int[31:0]
+@29
+system_tb.uut.knn.ready
+system_tb.uut.knn.ready_int
+system_tb.uut.knn.rst
+system_tb.uut.knn.rst_int
+system_tb.uut.knn.valid
+system_tb.uut.knn.wdata
+system_tb.uut.knn.write
+@23
+system_tb.uut.knn.wstrb[3:0]
 [pattern_trace] 1
 [pattern_trace] 0
