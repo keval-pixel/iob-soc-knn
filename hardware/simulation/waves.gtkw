@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Thu Sep  2 19:31:08 2021
+[*] Tue Sep  7 11:47:42 2021
 [*]
 [dumpfile] "/home/iob-user/Desktop/iob-soc-knn/hardware/simulation/icarus/system.vcd"
-[dumpfile_mtime] "Thu Sep  2 19:22:43 2021"
-[dumpfile_size] 447316583
+[dumpfile_mtime] "Mon Sep  6 10:34:52 2021"
+[dumpfile_size] 118376821
 [savefile] "/home/iob-user/Desktop/iob-soc-knn/hardware/simulation/waves.gtkw"
 [timestart] 0
 [size] 1848 1136
 [pos] -1 -1
-*-20.371645 13971110000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-20.371645 936000 14260000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] system_tb.
 [treeopen] system_tb.uut.
 [treeopen] system_tb.uut.cpu.picorv32_core.
@@ -17,6 +17,7 @@
 [treeopen] system_tb.uut.cpu.picorv32_core.genblk5.
 [treeopen] system_tb.uut.int_mem0.
 [treeopen] system_tb.uut.int_mem0.int_sram.
+[treeopen] system_tb.uut.knn.
 [sst_width] 324
 [signals_width] 358
 [sst_expanded] 1
@@ -111,49 +112,70 @@ system_tb.uart_tb.txd
 @200
 -
 -KNN
-@29
+@28
 system_tb.uut.knn.KNN_ENABLE
 system_tb.uut.knn.KNN_RESET
-@23
-system_tb.uut.knn.KNN_VALUE[63:0]
-system_tb.uut.knn.KNN_VALUE_HIGH[31:0]
-system_tb.uut.knn.KNN_VALUE_LOW[31:0]
-system_tb.uut.knn.KNN_X1[31:0]
-system_tb.uut.knn.KNN_X2[31:0]
-system_tb.uut.knn.KNN_Y1[31:0]
-system_tb.uut.knn.KNN_Y2[31:0]
-@29
 system_tb.uut.knn.address[2:0]
 system_tb.uut.knn.clk
-system_tb.uut.knn.knn0.KNN_ENABLE
-@23
-system_tb.uut.knn.knn0.KNN_VALUE[63:0]
-system_tb.uut.knn.knn0.KNN_X1[31:0]
-system_tb.uut.knn.knn0.KNN_X2[31:0]
-system_tb.uut.knn.knn0.KNN_Y1[31:0]
-system_tb.uut.knn.knn0.KNN_Y2[31:0]
-@29
-system_tb.uut.knn.knn0.clk
-@23
-system_tb.uut.knn.knn0.difx[31:0]
-system_tb.uut.knn.knn0.dify[31:0]
-system_tb.uut.knn.knn0.distance[63:0]
-@29
 system_tb.uut.knn.knn0.rst
-@23
-system_tb.uut.knn.knn0.squarex[63:0]
-system_tb.uut.knn.knn0.squarey[63:0]
+@22
 system_tb.uut.knn.rdata[31:0]
 system_tb.uut.knn.rdata_int[31:0]
-@29
+@28
 system_tb.uut.knn.ready
 system_tb.uut.knn.ready_int
-system_tb.uut.knn.rst
 system_tb.uut.knn.rst_int
 system_tb.uut.knn.valid
-system_tb.uut.knn.wdata
 system_tb.uut.knn.write
-@23
+@22
 system_tb.uut.knn.wstrb[3:0]
+@c00022
+system_tb.uut.knn.wdata[31:0]
+@28
+(0)system_tb.uut.knn.wdata[31:0]
+(1)system_tb.uut.knn.wdata[31:0]
+(2)system_tb.uut.knn.wdata[31:0]
+(3)system_tb.uut.knn.wdata[31:0]
+(4)system_tb.uut.knn.wdata[31:0]
+(5)system_tb.uut.knn.wdata[31:0]
+(6)system_tb.uut.knn.wdata[31:0]
+(7)system_tb.uut.knn.wdata[31:0]
+(8)system_tb.uut.knn.wdata[31:0]
+(9)system_tb.uut.knn.wdata[31:0]
+(10)system_tb.uut.knn.wdata[31:0]
+(11)system_tb.uut.knn.wdata[31:0]
+(12)system_tb.uut.knn.wdata[31:0]
+(13)system_tb.uut.knn.wdata[31:0]
+(14)system_tb.uut.knn.wdata[31:0]
+(15)system_tb.uut.knn.wdata[31:0]
+(16)system_tb.uut.knn.wdata[31:0]
+(17)system_tb.uut.knn.wdata[31:0]
+(18)system_tb.uut.knn.wdata[31:0]
+(19)system_tb.uut.knn.wdata[31:0]
+(20)system_tb.uut.knn.wdata[31:0]
+(21)system_tb.uut.knn.wdata[31:0]
+(22)system_tb.uut.knn.wdata[31:0]
+(23)system_tb.uut.knn.wdata[31:0]
+(24)system_tb.uut.knn.wdata[31:0]
+(25)system_tb.uut.knn.wdata[31:0]
+(26)system_tb.uut.knn.wdata[31:0]
+(27)system_tb.uut.knn.wdata[31:0]
+(28)system_tb.uut.knn.wdata[31:0]
+(29)system_tb.uut.knn.wdata[31:0]
+(30)system_tb.uut.knn.wdata[31:0]
+(31)system_tb.uut.knn.wdata[31:0]
+@1401200
+-group_end
+@421
+system_tb.uut.knn.KNN_X1[15:0]
+system_tb.uut.knn.KNN_X2[15:0]
+system_tb.uut.knn.KNN_Y1[15:0]
+system_tb.uut.knn.KNN_Y2[15:0]
+system_tb.uut.knn.knn0.difx[15:0]
+system_tb.uut.knn.knn0.dify[15:0]
+system_tb.uut.knn.knn0.distance[31:0]
+system_tb.uut.knn.knn0.squarex[31:0]
+system_tb.uut.knn.knn0.squarey[31:0]
+system_tb.uut.knn.KNN_VALUE[31:0]
 [pattern_trace] 1
 [pattern_trace] 0
